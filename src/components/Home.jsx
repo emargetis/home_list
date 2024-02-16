@@ -1,6 +1,12 @@
-const Home = ({ home }) => {
+const Home = ({ home, onCardClick }) => {
+
+  const handleCardClick = (e) => {
+    e.preventDefault();
+    onCardClick(home.homePlanId);
+  }
+
   return (
-    <a href={`/homes?home=${home.homePlanId}`}>
+    <a href={`/homes?home=${home.homePlanId}`} onClick={handleCardClick}>
       <div className="cardContainer">
         <div className="cardImageContainer">
           <img
