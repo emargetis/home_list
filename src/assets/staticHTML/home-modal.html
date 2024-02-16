@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./App.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="App">
+        <div class="sidenav">
+          <ul>
+            <li><a href="./homes.html">Home Plans</a></li>
+            <li><a href="./lots.html">Lots</a></li>
+          </ul>
+        </div>
+        <div class="homesListContainer">
+          <button class="button">Show Saved Homes</button>
+          <div class="homesList">
+            <a href="./home-modal.html">
+              <div class="cardContainer">
+                <div class="cardImageContainer">
+                  <img
+                    src="https://storage.googleapis.com/home_plan_images/70660mk_0.jpg"
+                    alt="the-medita"
+                  />
+                  <div>
+                    <button class="favoriteButton highlighted">
+                      <img src="./images/heart.png" alt="heart icon" />
+                    </button>
+                  </div>
+                </div>
+                <div class="homeInfoContainer">
+                  <h3>The Medita</h3>
+                  <p id="homeDetails">4 beds - 4 baths - 4,300 sqft</p>
+                  <div class="tagsContainer">
+                    <p class="tags">master on main</p>
+                    <p class="tags">patio</p>
+                  </div>
+                  <p class="description">
+                    The Medita is a spacious model featuring an open floor plan
+                    and spacious foyer.You'll feel like you blend in with your
+                    surroundings when you're at home.The plan comes with 3
+                    different layout options on the first floor, and an optional
+                    patio addition.
+                  </p>
+                </div>
+              </div> </a
+            ><a href="./home-modal.html">
+              <div class="cardContainer">
+                <div class="cardImageContainer">
+                  <img
+                    src="https://storage.googleapis.com/home_plan_images/28935jj_0.jpg"
+                    alt="the-modesto"
+                  />
+                  <div>
+                    <button class="favoriteButton">
+                      <img src="heart.png" alt="heart icon" />
+                    </button>
+                  </div>
+                </div>
+                <div class="homeInfoContainer">
+                  <h3>The Modesto</h3>
+                  <p id="homeDetails">2 beds - 1 baths - 1,800 sqft</p>
+                  <div class="tagsContainer">
+                    <p class="tags">cozy space</p>
+                    <p class="tags">patio</p>
+                  </div>
+                  <p class="description">
+                    The Modesto is a cozy bungalow model guaranteed to be your
+                    happy place. The plan comes with 2 different layout options
+                    on the first floor, and an optional patio addition.
+                  </p>
+                </div>
+              </div> </a
+            ><a href="./home-modal.html">
+              <div class="cardContainer">
+                <div class="cardImageContainer">
+                  <img
+                    src="https://storage.googleapis.com/home_plan_images/90304pd_0.jpg"
+                    alt="the-gallago"
+                  />
+                  <div>
+                    <button class="favoriteButton">
+                      <img src="heart.png" alt="heart icon" />
+                    </button>
+                  </div>
+                </div>
+                <div class="homeInfoContainer">
+                  <h3>The Gallago</h3>
+                  <p id="homeDetails">4 beds - 3 baths - 2,100 sqft</p>
+                  <div class="tagsContainer">
+                    <p class="tags">low noise</p>
+                    <p class="tags">urban</p>
+                  </div>
+                  <p class="description">
+                    The Gallago is a space crafted to blend perfectly into an
+                    urban setting, with noise-reduction walls and modern touches
+                    that make city life a joy. The plan comes with 3 different
+                    layout options on the first floor.
+                  </p>
+                </div>
+              </div> </a
+            ><a href="./home-modal.html">
+              <div class="cardContainer">
+                <div class="cardImageContainer">
+                  <img
+                    src="https://storage.googleapis.com/home_plan_images/0837w_0.jpg"
+                    alt="the-altastone"
+                  />
+                  <div>
+                    <button class="favoriteButton">
+                      <img src="heart.png" alt="heart icon" />
+                    </button>
+                  </div>
+                </div>
+                <div class="homeInfoContainer">
+                  <h3>The Altastone</h3>
+                  <p id="homeDetails">3 beds - 2 baths - 2,300 sqft</p>
+                  <div class="tagsContainer">
+                    <div class="noTags"></div>
+                  </div>
+                  <p class="description">
+                    The Altastone is an adobe-inspired home designed with the
+                    dry desert in mind. Its unique architecture will keep the
+                    home cool during the day while providing plenty of natural
+                    light. The plan comes with a single layout with an optional
+                    patio.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-container">
+      <div class="screen"></div>
+      <div id="modal">
+        <div class="modalContainer">
+          <div class="selectedCardContainer">
+            <div class="modalImageContainer">
+              <img
+                src="https://storage.googleapis.com/home_plan_images/70660mk_0.jpg"
+                alt="the-medita"
+              />
+            </div>
+            <div class="modalInformationContainer">
+              <div class="homeInfoContainer">
+                <h3>The Medita</h3>
+                <p id="homeDetails">4 beds - 4 baths - 4,300 sqft</p>
+                <div class="tagsContainer">
+                  <p class="tags">master on main</p>
+                  <p class="tags">patio</p>
+                </div>
+                <p class="description">
+                  The Medita is a spacious model featuring an open floor plan
+                  and spacious foyer. You'll feel like you blend in with your
+                  surroundings when you're at home. The plan comes with 3
+                  different layout options on the first floor, and an optional
+                  patio addition.
+                </p>
+              </div>
+              <div>
+                <button class="favoriteButton highlighted">
+                  <img src="heart.png" alt="heart icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="compatibleOptionsContainer">
+            <div id="compatibleOptionsTitle">
+              <p>Compatible Lots</p>
+            </div>
+            <div class="compatibleOptionsList">
+              <a href="/lots?selectedLot=123-example-ln">
+                <div class="cardContainer">
+                  <div class="cardImageContainer">
+                    <img
+                      src="https://storage.googleapis.com/plot_images/1018314458"
+                      alt="123-example-ln"
+                    />
+                    <div>
+                      <button class="favoriteButton" id="false">
+                        <img src="heart.png" alt="heart icon" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="lotInfoContainer">
+                    <h2>123 Example Ln</h2>
+                    <p id="cityState">Charlotte, NC</p>
+                    <p id="acreage">1.6 acres - 69,696 sqft</p>
+                    <p class="lotDescription">
+                      This sprawling lot is located on the outskirts of
+                      Charlotte, with nearby boat access to Example Lake and a
+                      straight shot to downtown Charlotte via Example Highway.
+                    </p>
+                  </div>
+                </div> </a
+              ><a href="/lots?selectedLot=123-sample-ln">
+                <div class="cardContainer">
+                  <div class="cardImageContainer">
+                    <img
+                      src="https://storage.googleapis.com/plot_images/1018937216"
+                      alt="123-sample-ln"
+                    />
+                    <div>
+                      <button class="favoriteButton">
+                        <img src="heart.png" alt="heart icon" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="lotInfoContainer">
+                    <h2>123 Sample Ln</h2>
+                    <p id="cityState">Raleigh, NC</p>
+                    <p id="acreage">0.7 acres - 30,492 sqft</p>
+                    <p class="lotDescription">
+                      This spacious lot is in the gorgeous Example Neighborhood,
+                      surrounded by historic landmarks such as The Cool Things
+                      Museum and The Very Old House.
+                    </p>
+                  </div>
+                </div> </a
+              ><a href="/lots?selectedLot=123-test-ct">
+                <div class="cardContainer">
+                  <div class="cardImageContainer">
+                    <img
+                      src="https://storage.googleapis.com/plot_images/1043665691"
+                      alt="123-test-ct"
+                    />
+                    <div>
+                      <button class="favoriteButton highlighted">
+                        <img src="heart.png" alt="heart icon" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="lotInfoContainer">
+                    <h2>123 Test Ct</h2>
+                    <p id="cityState">Charlotte, NC</p>
+                    <p id="acreage">0.28 acres - 12,197 sqft</p>
+                    <p class="lotDescription">
+                      This cozy lot is directly next to downtown Charlotte -
+                      from your front yard you can walk to uptown. Be sure to
+                      check out The Average Bowling Alley or one of the plenty
+                      of restaurants nearby!
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
